@@ -1,0 +1,250 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1a1a1a;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+}
+
+h1 {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-size: 48px;
+    color: #ff69b4;
+    margin: 20px;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.search-container input[type="text"] {
+    padding: 10px;
+    border: 2px solid #ff69b4;
+    border-radius: 5px;
+    font-size: 18px;
+    box-sizing: border-box;
+    width: 250px;
+    margin-right: 10px;
+    color: #000;
+    background-color: #fff;
+}
+
+.button-container button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #ff69b4;
+    color: #fff;
+    transition: background-color 0.3s;
+}
+
+.button-container button:hover {
+    background-color: #ff1493;
+}
+
+.form-container input[type="text"],
+.form-container input[type="date"],
+.form-container select,
+.form-container button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 2px solid #ff69b4;
+    border-radius: 5px;
+    font-size: 18px;
+    box-sizing: border-box;
+    color: #000;
+    background-color: #fff;
+}
+
+.form-container button {
+    background-color: #ff69b4;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.form-container button:hover {
+    background-color: #ff1493;
+}
+
+.task-list-container ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.task-list-container li {
+    background-color: #2a2a2a;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.task-list-container li span {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.task-list-container .status {
+    font-weight: bold;
+    color: #ff69b4;
+}
+
+.button-container {
+    display: flex;
+}
+
+.task-container {
+    display: flex;
+    justify-content: center;
+}
+
+.task-container select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 2px solid #ff69b4;
+    border-radius: 5px;
+    font-size: 18px;
+    box-sizing: border-box;
+    color: #000;
+    background-color: #fff;
+}
+
+.form-container {
+    max-width: 300px;
+    margin-right: 20px;
+}
+
+.task-list-container {
+    max-width: 400px;
+}
+
+.task-container,
+.form-container,
+.task-list-container {
+    text-align: left;
+}
+
+.button-container button:nth-child(2) {
+    margin-left: 10px;
+}
+
+.task-list-container {
+    max-width: 900px;
+    max-height: 400px;
+    /* Added max height */
+    overflow-y: auto;
+    /* Added to enable vertical scrolling */
+}
+
+.task-list-container ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.task-list-container li {
+    background-color: #222;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.task-list-container li:hover {
+    transform: scale(1.02);
+}
+
+.task-list-container li span {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.task-list-container .status {
+    font-weight: bold;
+    color: #ff69b4;
+}
+
+.task-list-container .filter-status {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.task-list-container .button-container {
+    display: inline-block;
+}
+
+.task-list-container .button-container button {
+    background-color: #ff69b4;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 14px;
+    margin-right: 5px;
+    transition: background-color 0.3s;
+}
+
+.task-list-container .button-container button:hover {
+    background-color: #ff1493;
+}
+
+
+/* New Anime-Game Style Elements */
+
+.task-container,
+.form-container,
+.task-list-container {
+    border: 2px solid #ff69b4;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #1a1a1a;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.task-container h2,
+.form-container h2,
+.task-list-container h2 {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-size: 24px;
+    color: #ff69b4;
+    margin-bottom: 10px;
+}
+
+.button-container button,
+.form-container button,
+.task-list-container button {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.button-container button:hover,
+.form-container button:hover,
+.task-list-container button:hover {
+    background-color: #ff1493;
+    transform: scale(1.05);
+}
+
+.task-list-container ul {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.task-list-container li:hover {
+    transform: none;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}

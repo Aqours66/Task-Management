@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <h1 class="game-title">Task Manager</h1>
+    <div class="search-container">
+        <input type="text" id="searchTask" class="search-input" placeholder="Search tasks">
+        <div class="button-container">
+            <button onclick="searchTasks()" class="search-button">Search</button>
+            <button onclick="clearSearch()" class="clear-button">Clear</button>
+        </div>
+    </div>
+
+    <div class="task-container">
+
+        <div class="form-container">
+            <input type="text" id="taskProject" class="form-input" placeholder="Task Project">
+            <input type="text" id="taskTitle" class="form-input" placeholder="Task Title">
+            <input type="text" id="taskDescription" class="form-input" placeholder="Task Description">
+            <input type="date" id="taskDueDate" class="form-input" aria-label="Task Due Date">
+            <select id="taskPriority" class="form-select" aria-label="taskPriority">
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+            </select>
+            <select id="filterStatus" onchange="filterTasks()" class="form-select" aria-label="filterStatus">
+                <option value="all">All Tasks</option>
+                <option value="not-started">Not Started</option>
+                <option value="in-progress">In Progress</option>
+                <option value="completed">Completed</option>
+            </select>
+            <button onclick="addTask()" class="form-button">Add Task</button>
+        </div>
+
+        <div class="task-list-container">
+            <ul id="taskList"></ul>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
